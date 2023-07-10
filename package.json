@@ -1,0 +1,44 @@
+{
+  "name": "vite-mail-templates",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "https://github.com/kasapvictor/draft-mail-template-builder-react",
+  "scripts": {
+    "dev": "vite --port 4002",
+    "build": "vite build",
+    "preview": "vite preview --port 4000",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.8",
+    "@faire/mjml-react": "4.0.0-main-alpha.2",
+    "@mantine/core": "^6.0.9",
+    "@mantine/dropzone": "^6.0.9",
+    "@mantine/hooks": "^6.0.9",
+    "@mantine/prism": "^6.0.9",
+    "beautify-html": "^1.0.3",
+    "dompurify": "^3.0.1",
+    "effector": "^22.5.2",
+    "effector-react": "^22.5.0",
+    "immer": "^9.0.19",
+    "js-beautify": "^1.14.7",
+    "mjml-browser": "^4.13.0",
+    "mjml-core": "^4.13.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-dom": "^18.2.0",
+    "react-frame-component": "^5.2.6",
+    "react-iframe": "^1.8.5",
+    "react-router-dom": "^6.9.0",
+    "sanitize-html-react": "^1.13.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "gh-pages": "^5.0.0",
+    "vite": "^4.1.0"
+  }
+}
