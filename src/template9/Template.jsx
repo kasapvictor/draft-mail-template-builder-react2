@@ -12,14 +12,14 @@ export const Template = () => {
         <h2>Template #7</h2>
       </div>
       <div style={{display: "flex", gap: 20, flexWrap: "wrap"}}>
-        <div style={{flex: '15%'}}>
+        <div style={{width: '100%', maxWidth: 250}}>
           <SettingsPanel />
         </div>
-        <div style={{flex: '80%'}}>
+        <div style={{width: 720, margin: '0 auto'}}>
           <Content/>
         </div>
 
-        <div style={{flex: 1, width: '100%'}}>
+        <div style={{ width: '100%'}}>
           <BuildRawHtml />
         </div>
       </div>

@@ -31,7 +31,7 @@ const settingsRowStyles = {
   flexDirection: 'column',
   justifyContent: 'start',
   alignItems: 'flex-start',
-  gap: 4
+  gap: 4,
 }
 
 const useSelectedElement = (selectedElementId) => {
