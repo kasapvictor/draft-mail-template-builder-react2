@@ -1,11 +1,11 @@
 import {forwardRef} from "react";
 import sanitizeHtml from "sanitize-html-react";
 
-export const LinkBlock = forwardRef(({id, dataType, onClick, onMouseEnter, onMouseLeave, style, content, ...props}, refElement) => {
+export const LinkBlock = forwardRef(({outlineStyle, id, dataType, onClick, onMouseEnter, onMouseLeave, style, content, ...props}, refElement) => {
   return (
     <a {...props}
       id={id}
-      style={style}
+      style={{...style, ...outlineStyle}}
       ref={refElement}
       onClick={onClick}
       data-type={dataType}

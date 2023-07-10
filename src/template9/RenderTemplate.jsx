@@ -156,32 +156,32 @@ const RenderElement = memo(({ elementId, children }) => {
     : {};
 
   const { style, ...otherProps } = props;
-  const elementStyles = useMemo(() => ({
-    ...style,
+  const outlineStyle = useMemo(() => ({
     cursor: 'default',
     outlineOffset: '-1px',
     outlineWidth: isSelected || isHovered ? '1px' : '0px',
     outlineColor: isSelected || isHovered ? mainColor : 'none',
     outlineStyle: isEmptyContent || isFontSizeZero ? 'dashed' : 'solid',
     ...emptyStyles,
-  }), [style, isSelected, isHovered, isEmptyContent, emptyStyles])
+  }), [isSelected, isHovered, isEmptyContent, emptyStyles])
 
   const Component = componentByType[type];
 
   return (
     <Component
               {...otherProps}
-              tag={tag}
+              tag={tag} // используется только в заголовках
               img={img}
+              style={style}
               id={elementId}
               key={elementId}
               dataType={type}
               ref={refElement}
+              content={content}
               onClick={handleClick}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
-              style={{ ...elementStyles }}
-              content={content}>
+              outlineStyle={outlineStyle}>
       {children}
     </Component>
   )

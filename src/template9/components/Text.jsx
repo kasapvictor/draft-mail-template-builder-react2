@@ -2,11 +2,11 @@ import {forwardRef} from "react";
 import sanitizeHtml from "sanitize-html-react";
 
 
-export const Text = forwardRef(({id, dataType, onClick, onMouseEnter, onMouseLeave, style, content, children, ...props}, refElement) => {
+export const Text = forwardRef(({outlineStyle, id, dataType, onClick, onMouseEnter, onMouseLeave, style, content, children, ...props}, refElement) => {
   return (
     <div {...props}
          id={id}
-         style={style}
+         style={{...style, ...outlineStyle}}
          ref={refElement}
          data-type={dataType}
          onClick={onClick}

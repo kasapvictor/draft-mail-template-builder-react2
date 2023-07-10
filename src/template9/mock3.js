@@ -1532,6 +1532,7 @@ export const tree = {
   canvas: { id: 'canvas', parent: 'root', children: ['container'] },
   container: { id: 'container', parent: 'canvas', children: ['table'] },
   table: { id: 'table', parent: 'container', children: ['tbody'] },
+  // tbody: { id: 'tbody', parent: 'table', children: ['nav1row1', 'hero1row1', 'reviews1row1', 'quote1row1', 'footer1row1'] },
   tbody: { id: 'tbody', parent: 'table', children: ['nav1row1', 'hero1row1', 'reviews1row1', 'quote1row1', 'footer1row1'] },
 
   ...nav1.tree,
